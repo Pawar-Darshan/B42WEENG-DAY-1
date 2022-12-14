@@ -1,0 +1,32 @@
+HTTP1.1 VS HTTP2
+First of all, let understand what is HTTP is:
+HTTP is a protocol for fetching resources such as HTML documents. It is the foundation of any data exchange on the web and it is a client-server protocol, which means requests are initiated by the recipient, usually the web browser. A complete document is reconstructed from the different subdocuments fetched, for instance, text, layout description, images, videos, scripts, and more.
+clients and servers communicated by exchanging individual messages (as opposed to a stream of data). These messages sent by the client, usually a web browser, are called requests, and the messages sent by the server as an answer are called responses.
+
+HTTP/1.1:
+1. It works on the textual format.
+2. There is the head of line blocking that blocks all the requests behind it until it doesn't get its all resources.
+3. It uses requests resource lining for use getting multiple pages.
+4. It compressess data bt itself.
+
+HTTP2:
+1. It works o binary protocol.
+2. It allows multiplexing so one TCP connection is required for multiple requests.
+3. It uses PUSH frame by server that collects all multiple pages.
+4. It uses HPACK for data compression.
+
+Objects and its internal represent in Javascript:
+Objects in javascript, it is the most important data-type and forms the building blocks for modern JavaScript. These objects are quite different from JavaScript's primitve data-type(Number, string, boolean, null, undefined and symbol) in the sense that while these primitive data-types all store a single value each (depending on their types). Objects in javascript may be defined as an unordered collection of related data, of primitive or reference types, in the form of "key:value" pairs, these keys can be variable or functions and are called properties and methods, respectively, in the context of an object.
+for eg. If your object is a student, it will have properties like name, age, address, id, etc and methods like updateAddress, updateName, etc.
+A javascript object has properties associated with it. A property of an object can be explained as a variable that is attached to the object. object properties are basically the same as ordinary javascript variables, except for the attachment to objects. The properties of an object define the characteristics of the object. You access the properties of an object with a simple dot notation.
+eg. car.color.
+Like all javascript variables, both the object name (which could be a normal variable) and property name are case sensitive. You can define a property by assigning it a value. for example. let's create an object named myMobile and give it properties like make, model and color as follow:
+var myMobile = new Object();
+myMobile.make = "Samsung";
+myMobile.model = "Galaxy M13";
+myMobile.color = "Black";
+unassigned properties of an objects are undefined (not a null).
+Properties of javascript objects can also be accessed or set using bracket notation. Objects are sometimes called associative arrays, since each property is  associated with a string value that can be used to access it. so, for example, you could access the properties of the myMobile object as follows:
+myMobile["make"] = "Samsung";
+myMobile["model"] = "Galaxy M13";
+myMobile["color"] = "Black";
